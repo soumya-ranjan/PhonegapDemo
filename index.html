@@ -1,20 +1,26 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Demo Application</title>
+	<title>HTML5 Login</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<table border="0px">
-<tr>
-	<td>Username: </td>
-	<td><input type="text" /></td>
-</tr>
-<tr>
-	<td>Password: </td>
-	<td><input type="password" /></td>
-</tr>
-<tr>
-	<td align="center" colspan="2"><input type="button" value="Login"/></td>
-</tr>
-</table>
-<body>
+	<section class="loginform cf">
+		<form name="login" action="index_submit" method="get" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="usermail">Email</label>
+					<input type="email" name="usermail" placeholder="yourname@email.com" required>
+				</li>
+				<li>
+					<label for="password">Password</label>
+					<input type="password" name="password" placeholder="password" required></li>
+				<li>
+					<input type="submit" value="Login">
+				</li>
+			</ul>
+		</form>
+	</section>
+</body>
 </html>
